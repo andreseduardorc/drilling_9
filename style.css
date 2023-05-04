@@ -1,0 +1,150 @@
+h1 {
+    color: gray;
+    text-align: center;
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    text-decoration-line: overline;
+}
+
+h3,
+.boton {
+    text-align: center;
+    position: relative;
+    right: 30px;
+}
+
+.logo {
+    position: absolute;
+    top: 1px;
+    width: 75px;
+    height: 75px;
+}
+
+nav {
+    background-image: url('./src/fondo.jpg');
+    background-repeat: repeat-x;
+    background-size: 24% 300%;
+    height: 80px;
+    display: flex;
+}
+
+.navbar-nav {
+    padding-left: 250px;
+}
+.navbar-collapse{
+    display: flex;
+    
+}
+.navbar-collapse li{
+    background-color: black;
+    opacity: 0.8;
+    padding: 0 5px;
+}
+
+p {
+    display: inline-block;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.box img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.form1 {
+    padding-left: 40px;
+    background-color: gray;
+    margin-bottom: 20px;
+    color: white;
+}
+.form1 .input-group{
+    padding-right: 30px;
+}
+.form2 {
+    padding-left: 40px;
+    background-color: gray;
+    margin-bottom: 20px;
+    color: white;
+}
+.form2 .input-group{
+    padding-right: 30px;
+}
+
+
+.boton {
+    margin-top: 10px;
+}
+
+
+
+footer {
+    background-image: url('./src/fondo.jpg');
+    background-size: 65%;
+    text-align: center;
+    height: 135px;
+    color: white;
+}
+
+footer p {
+    position: relative;
+    top: 90px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .box img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    nav {
+        background-size: 45% 300%;
+    }
+
+
+ 
+    footer {
+        background-size: 110%;
+    }
+}
+
+@media (min-width: 641px) and (max-width:767px) {
+    nav {
+        background-size: 58%;
+    }
+    .form1, .form2 {
+        display: none;
+    }
+    
+
+  
+    footer {
+        background-size: 140%;
+        height: 140px;
+    }
+}
+
+@media (max-width: 640px) {
+    nav {
+        background-size: 80%;
+    }
+    .form1, .form2 {
+        display: none;
+    }
+   
+    footer {
+        background-size: 200%;
+    }
+}
